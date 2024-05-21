@@ -3,13 +3,14 @@ import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div>
       <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-[#202238]">
         <div class="container mx-auto px-10 text-[#C0C0C0] ">
-          <div class="flex flex-wrap text-left lg:text-left">
+          <div class="flex flex-wrap text-left lg:text-left mb-8">
             <div class=" w-3/12 max-md:w-full px-4">
               <h4 class="text-3xl fonat-semibold text-blueGray-700">
                 Let's keep in touch!
@@ -39,77 +40,80 @@ const Footer = () => {
                     Useful Links
                   </span>
                   <ul class="list-unstyled">
-                    <li>
-                      <a
+                  <li>
+                      <Link
                         class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                        href="/"
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        href="/about"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com?ref=njs-profile"
+                        href="/contact"
                       >
-                        Blog
-                      </a>
+                        Contact Us
+                      </Link>
                     </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=njs-profile"
-                      >
-                        Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
-                      >
-                        Free Products
-                      </a>
-                    </li>
+                    
+                   
                   </ul>
                 </div>
                 <div class="w-6/12 max-md:w-full">
                   <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                    Other Resources
+                    Cources
                   </span>
                   <ul class="list-unstyled">
                     <li>
-                      <a
+                      <Link
                         class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                        href="/engineering"
                       >
-                        MIT License
-                      </a>
+                        Engineering
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms?ref=njs-profile"
+                        href="/agriculture"
                       >
-                        Terms &amp; Conditions
-                      </a>
+                        BSC Agriculture
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=njs-profile"
+                        href="/medicine"
                       >
-                        Privacy Policy
-                      </a>
+                        Medical Sciences
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us?ref=njs-profile"
+                        href="/mbbs"
                       >
-                        Contact Us
-                      </a>
+                        MBBS
+                      </Link>
                     </li>
+                    <li>
+                      <Link
+                        class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        href="/distance-education"
+                      >
+                        Distance Education
+                      </Link>
+                    </li>
+                   
                   </ul>
                 </div>
               </div>

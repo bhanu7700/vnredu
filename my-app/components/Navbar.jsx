@@ -13,6 +13,10 @@ const Navbar = () => {
     { href: "/engineering", label: "Engineering" },
     { href: "/agriculture", label: "BSC Agriculture" },
     { href: "/medicine", label: "Medical sciences" },
+    { href: "/mbbs", label: "MBBS" },
+
+    { href: "/distance-education", label: "Distance Education" },
+
   ];
   return (
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -161,7 +165,7 @@ const Navbar = () => {
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
                     </svg>
                   </button>
-                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 bg-slate-100 rounded z-50 ">
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 bg-slate-100 rounded z-50 w-[180px] ">
                     <li class="">
                       <Link
                         class="rounded-t  py-2 px-4 block whitespace-no-wrap"
@@ -184,6 +188,22 @@ const Navbar = () => {
                         href="/medicine"
                       >
                         Medical Sciences
+                      </Link>
+                    </li>
+                    <li class="">
+                      <Link
+                        class="rounded-b  py-2 px-4 block whitespace-no-wrap"
+                        href="/mbbs"
+                      >
+                        MBBS
+                      </Link>
+                    </li>
+                    <li class="">
+                      <Link
+                        class="rounded-b  py-2 px-4 block whitespace-no-wrap"
+                        href="/distance-education"
+                      >
+                        Distance education
                       </Link>
                     </li>
                   </ul>

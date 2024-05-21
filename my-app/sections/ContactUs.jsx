@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMailOpen } from "react-icons/io";
 import { MdAddIcCall } from "react-icons/md";
@@ -8,6 +9,29 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { FaInstagramSquare } from "react-icons/fa";
 
 const ContactUs = () => {
+  const [isFormValid, setIsFormValid] = useState(false);
+  const [newComment, setNewComment] = useState({
+    name: "",
+    course:"",
+    phone:"",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setNewComment({
+      ...newComment,
+      [name]: value,
+    });
+    console.log(newComment)
+    setIsFormValid(checkFormValidity());
+  };
+
+  const checkFormValidity = () => {
+    const { name, email, message } = newComment;
+    return name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
+  };
   return (
     <div className="contact ">
       <div className="padding-x padding-y flex max-md:flex-col ">
@@ -15,14 +39,14 @@ const ContactUs = () => {
           <section className="text-gray-700 body-font relative px-2 max-md:px-4 ">
             <div className="container  px-2  py-10  mx-auto">
               <div className="flex flex-col text-center w-full mb-12 gap-2">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                <h1 className="sm:text-3xl text-2xl font-medium  mb-4 text-gray-900">
                   Contact Us
                 </h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                   Send a message
                 </p>
               </div>
-              <div className="lg:w-1/2 md:w-2/3 mx-auto">
+              <div className=" md:w-2/3 mx-auto">
                 <div className="flex flex-wrap -m-2">
                   <div className="p-2 w-[50%] max-lg:w-[100%]  ">
                     <div className="relative flex flex-col items-start gap-3">
@@ -36,6 +60,8 @@ const ContactUs = () => {
                         type="text"
                         id="name"
                         name="name"
+                        value={newComment.name}
+                        onChange={handleInputChange}
                         className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
@@ -49,9 +75,11 @@ const ContactUs = () => {
                         Preffered Course
                       </label>
                       <input
-                        type="email"
-                        id="email"
-                        name="email"
+                        type="text"
+                        id="course"
+                        name="course"
+                        value={newComment.course}
+                        onChange={handleInputChange}
                         className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
@@ -66,8 +94,10 @@ const ContactUs = () => {
                       </label>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="phone"
+                        name="phone"
+                        value={newComment.phone}
+                        onChange={handleInputChange}
                         className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
@@ -81,9 +111,11 @@ const ContactUs = () => {
                         Email
                       </label>
                       <input
-                        type="email"
-                        id="email"
-                        name="email"
+                         type="email"
+                         id="email"
+                         name="email"
+                         value={newComment.email}
+                         onChange={handleInputChange}
                         className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
@@ -99,6 +131,8 @@ const ContactUs = () => {
                       <textarea
                         id="message"
                         name="message"
+                        value={newComment.message}
+                        onChange={handleInputChange}
                         className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                       ></textarea>
                     </div>

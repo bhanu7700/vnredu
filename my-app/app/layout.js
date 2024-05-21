@@ -27,13 +27,12 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css"
         />
-        
       </head>
       <body className={inter.className}>
-      <Navbar />
+        <Navbar />
         {children}
         <Footer />
-       
+
         <a
           href="https://api.whatsapp.com/send?phone=9505502299&text=Hello%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
           className="float lg:hidden"
@@ -41,8 +40,7 @@ export default function RootLayout({ children }) {
         >
           <i class="fa fa-whatsapp my-float"></i>
         </a>
-       
-        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
       </body>
     </html>
   );

@@ -6,12 +6,12 @@ const WhyUs = () => {
   return (
     <div className="flex flex-col justify-center items-center text-center  ">
       <Fade cascade>
-        <p className="text-[#c10a16] text-[35px] max-md:text-[18px]  font-serif ">
+        <p className=" text-[35px] max-md:text-[24px]  font-serif my-5">
           Let’s Dream Big Together - University Admissions & Career Planning
         </p>
-        <h1 className="text-[40px] max-md:text-[22px] font-semibold mt-4 mb-5">
+        {/* <h1 className="text-[40px] max-md:text-[22px] font-semibold mt-4 mb-5">
           Best Consultancy for Distance and Online Education
-        </h1>
+        </h1> */}
       </Fade>
 
       <div className="flex  max-lg:flex-col my-6 gap-8 max-md:gap-12 mt-10">
@@ -34,7 +34,7 @@ const WhyUs = () => {
             </div>
             <div className="flex-col justify-center items-center flex  text-center">
               <h1 className="text-[#c10a16] text-[25px] font-semibold">
-                Online Education
+                Distance/Online Education
               </h1>
               <p className="mt-5 pr-6 font-serif">
                 Our online education options cover a wide range of disciplines,

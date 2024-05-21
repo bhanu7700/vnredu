@@ -90,6 +90,33 @@ export default function CarouselSec() {
         </SwiperSlide>
         <SwiperSlide className=" swiper-slide animeslide-slide">
           <img
+            src="/images/mbbs1.jpg"
+            alt="Caroucel"
+            className="w-full h-full   z-0 object-cover"
+          />
+
+          <div className=" img-text">
+            <h1 className=" animeslide-heading " data-animate="bottom">
+              MBBS Courses
+            </h1>
+            <p class="animeslide-desc" data-animate="bottom">
+              Delve into the fascinating world of agriculture with our Bachelor
+              of Science (BSc) in Agriculture courses. Rooted in scientific
+              principles and hands-on experience, our programs offer a
+              comprehensive education in crop cultivation, soil management,
+              livestock production, and sustainable farming practices.
+              <button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                type="button"
+              >
+                Apply Now
+              </button>
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className=" swiper-slide animeslide-slide">
+          <img
             src="/images/medicine1.jpg"
             alt="Caroucel"
             className="w-full  h-full  z-0 object-cover  "
@@ -106,6 +133,33 @@ export default function CarouselSec() {
               solutions, preparing you for a fulfilling career in the medical
               field.
               <button>Apply Now</button>
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className=" swiper-slide animeslide-slide">
+          <img
+            src="/images/mbbs1.jpg"
+            alt="Caroucel"
+            className="w-full h-full   z-0 object-cover"
+          />
+
+          <div className=" img-text4">
+            <h1 className=" animeslide-heading " data-animate="bottom">
+              Distance/Online Education
+            </h1>
+            <p class="animeslide-desc" data-animate="bottom">
+              Delve into the fascinating world of agriculture with our Bachelor
+              of Science (BSc) in Agriculture courses. Rooted in scientific
+              principles and hands-on experience, our programs offer a
+              comprehensive education in crop cultivation, soil management,
+              livestock production, and sustainable farming practices.
+              <button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                type="button"
+              >
+                Apply Now
+              </button>
             </p>
           </div>
         </SwiperSlide>

@@ -9,9 +9,9 @@ const page = () => {
         <h1 className="text-[40px] relative text-white"> - Engineering</h1>
       </div>
       <div className="padding-x padding-y">
-        <div className="flex max-md:flex-col gap-10">
-          <div className="w-[50%] max-md:w-[100%] px-10 max-md:px-2 flex flex-col justify-center items-center ">
-            <h1 className="mb-2 text-[40px] max-md:text-[30px] text-[#c10a16] font-semibold">
+        <div className="flex lg:flex-row flex-col gap-10">
+          <div className="w-[100%] lg:w-[50%] px-10 max-md:px-2 flex flex-col justify-center items-center ">
+            <h1 className="mb-2 text-[40px]  max-md:text-[30px] text-[#c10a16] font-semibold">
               Engineering Cources
             </h1>
             <p>
@@ -37,7 +37,7 @@ const page = () => {
               today.
             </p>
           </div>
-          <div className="w-[50%] max-md:w-[100%] px-10 max-md:px-2">
+          <div className="w-[100%]  lg:w-[50%] px-10 max-md:px-2">
             <img src="/images/engineering3.jpg" alt="engineering" />
           </div>
         </div>
